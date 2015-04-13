@@ -1,0 +1,8 @@
+/out
+/jobs
+/pending
+/waiting
+scratch
+node_modules
+*~
+*.swp

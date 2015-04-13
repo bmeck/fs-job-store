@@ -1,0 +1,25 @@
+{
+  "name": "fs-job-store",
+  "version": "1.0.0",
+  "description": "resilient job store only using a fs",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run prepublish",
+    "prepublish": "babel lib --out-dir out --source-maps",
+    "pretest": "npm run prepublish",
+    "test": "tape out/*/tests/*.js tests/*.js"
+  },
+  "author": "bradleymeck",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^4.0.1",
+    "debug": "^1.0.4",
+    "finally-aggregator": "^1.1.0",
+    "generator-runner": "^2.2.0",
+    "proper-lockfile": "^0.6.0",
+    "source-map-support": "^0.2.10"
+  },
+  "devDependencies": {
+    "tape": "~3.0.2"
+  }
+}
